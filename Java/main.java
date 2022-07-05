@@ -13,5 +13,13 @@ class Main {
         car2.driver = "Rayo Lento";
         car2.passegenger = 3;
         car2.printDataCar();
+
+        Account account = new Account();
+        account.name = "JuanUber";
+        account.email = "juanuber@gmail.com";
+        account.document = "1234563";
+        account.password = "secret";
+        account.printDataAccount();
+
     }
 }
