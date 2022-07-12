@@ -5,22 +5,12 @@ from car import Car
 def main() -> None:
 
     # Instacia
-    car = Car()
-    car.license = "AM1235"
-    car.driver = "Juan Herrera"
+    car = Car("AMD345", Account('Juan Dos', 'NAD435'))
     print(vars(car))
 
     # Instacia
-    car2 = Car()
-    car2.license = "WQM1235"
-    car2.driver = "Juan Array"
+    car2 = Car("GDE345", Account('Hernan Shummer', 'GHT765'))
     print(vars(car2))
-
-    account = Account()
-    account.name = 'Argos'
-    account.document = '1235788'
-    account.email = 'argos@gmail.com'
-    print(vars(account))
 
 
 if __name__ == "__main__":
