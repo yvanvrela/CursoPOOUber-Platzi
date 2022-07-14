@@ -1,2 +1,3 @@
-var car = new Car("AW25", new Account("Andres", "QWE458"));
-car.printDataCar();
+var uberX = new UberX('ADS342', new Account('Yvan', 'AAA223'), 'Toyota', 'Corolla')
+uberX.passenger = 4;
+uberX.printDataCar();
