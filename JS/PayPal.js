@@ -1,3 +1,5 @@
 class PayPal extends Payment {
-    constructor();
+    constructor(email) {
+        this.email = email;
+    }
 }
