@@ -1,5 +1,7 @@
 class Paypal extends Payment {
-    public Paypal(){
-        
+    String email;
+
+    public Paypal(String email) {
+        this.email = email;
     }
 }
