@@ -1,16 +1,14 @@
 from account import Account
 from car import Car
+from uberX import UberX
 
 
 def main() -> None:
 
-    # Instacia
-    car = Car("AMD345", Account('Juan Dos', 'NAD435'))
-    print(vars(car))
+    uberX = UberX("AGW342", Account(
+        "Yvan Varela", "DRE323"), "Hyundai", "Tucson")
 
-    # Instacia
-    car2 = Car("GDE345", Account('Hernan Shummer', 'GHT765'))
-    print(vars(car2))
+    print(vars(uberX))
 
 
 if __name__ == "__main__":
