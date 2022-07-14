@@ -1,8 +1,8 @@
 class Car {
-    Integer id;
-    String license;
-    Account driver;
-    private Integer passenger;// Encapsulamiento
+    private Integer id;
+    private String license;
+    private Account driver;
+    protected Integer passenger;// Encapsulamiento
 
     // Constructor
     public Car(String license, Account driver) {
@@ -11,7 +11,7 @@ class Car {
     }
 
     void printDataCar() {
-        if (passenger != null & license != null & driver.name != null) {
+        if (passenger != null) {
             System.out.println("License: " + license + " Name Driver: " + driver.name + " Passenger: " + passenger);
         } else {
             System.out.println("Asignar todos los datos!");
@@ -29,6 +29,30 @@ class Car {
         } else {
             System.out.println("Se debe asignar 4 pasajeros");
         }
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
     }
 
 }
